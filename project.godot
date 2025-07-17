@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="PokemonGame"
+run/main_scene="uid://cjqgii6qd13g8"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/borderless=true
 
 [rendering]
 
