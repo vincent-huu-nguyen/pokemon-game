@@ -13,6 +13,9 @@ var percent_moved_to_next_tile = 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	anim_tree.active = true
+	anim_tree.set("parameters/Idle/blend_position", Vector2(0, 1))  # Down direction
+	anim_state.travel("Idle")  # Switch to Idle state
 	initial_position = position
 
 	
